@@ -3,7 +3,6 @@
 	padding: 20px;
 	position: relative;
 }
-
 .ml-form-field {
 	margin-bottom: 20px;
 	display: block;
@@ -13,10 +12,6 @@
 	border: 0px;
 	padding: 0;
 }
-
-
-
-
 /*  ****** Legend ****** */
 .ml-form-field legend {
 	font-weight: bold;
@@ -24,9 +19,6 @@
 	font-size: 13px;
 	color: #333333;
 }
-
-
-
 /*  ****** Label ****** */
 .ml-form-field label {
 	position: relative;
@@ -39,10 +31,6 @@
 	display: inline;
 	padding: 5px 2px 2px 2px; 
 }
-
-
-
-
 /*  ****** Form Field  ****** */
 .ml-form-field input {
 	padding: 10px;
@@ -67,41 +55,10 @@
 	background: #fff;
 	color: #333;
 }
-
-
-
-/* ******  Error   ****** */
-/* .ml-form-field-errortext {
-	display: none;
-	font-size: 12px;
-	color: #DB1818;
-	margin-top: 5px;
-} */
-
-
-
-/* ****** Form field Error input *******
-.ml-form-field.error input, .ml-form-field.error select {
-	border: solid 1px #DB1818;
-	background-color: #FDE8E8;
+.m1-form-field span:required{
+	background: #DB1818;
+	color: #FDE8E8;
 }
-.ml-form-field.error input:focus, .ml-form-field.error select:focus {
-	background-color: #fff;
-}
-.ml-form-field.error input:focus + span, .ml-form-field.error select:focus + span {
-	background-color: #fff;
-	color: #DB1818;
-}
-.ml-form-field.error span {
-	background-color: #FDE8E8;
-	color: #DB1818;
-}
-.ml-form-field.error .ml-form-field-errortext {
-	display: block;
-} */
-
-
-
 /*  ******  Floating Label   ****** */
 .ml-form[data-forms="floating-label"] input + span, .ml-form[data-forms="floating-label"] input[value=""] + span {
 	transition: 0.3s ease;
@@ -131,135 +88,6 @@
 	width: auto;
 	background-color: #fff;
 	text-shadow: -4px 2px 0 0 #FFFFFF, 3px 0 1px 0 #FFFFFF, -2px 0 0 0 #FFFFFF, -3px 1px 2px 0 #FFFFFF, 6px 0 0 0 #FFFFFF, 4px 2px 0 0 #FFFFFF, 1px 1px 0 0 #FFFFFF;
-}
-
-
-/* DropDown */
-
-
-
-
-/*  ******  Dropdown  ****** */
-.ml-form-field-droplist-trigger {
-	position: relative;
-	border: solid 1px #757575;
-	width: 100%;
-	color: #333333;
-	text-align: left;
-	font-size: 13px;
-	background-color: #fff;
-	padding: 10px;
-}
-.ml-form-field-droplist-trigger:after {
-	content: "";
-	width: 0;
-	height: 0;
-	border: 7px solid transparent;
-	border-color: #AAA9AA transparent transparent transparent;
-	position: absolute;
-	top: 16px;
-	right: 10px;
-}
-.ml-form-field-droplist-trigger:focus {
-	border: solid 1px #007abc;
-	outline: 0;
-}
-.ml-form-field-droplist-trigger:focus:after {
-	border-color: #007abc transparent transparent transparent;
-}
-.ml-form-field-droplist-trigger.active {
-	border: solid 1px #007abc;
-	border-bottom: 0;
-}
-.ml-form-field-droplist-trigger.active:after {
-	border-color: #007abc transparent transparent transparent;
-}
-.ml-form-field-droplist-fields {
-	display: none;
-}
-.ml-form-field-droplist-fields.active {
-	display: block;
-	border: solid 1px #007abc;
-	border-top: 0;
-	padding: 10px;
-}
-.ml-form-field-select .select-hidden {
-	opacity: 0;
-	padding-right: 10px;
-	font-size: 13px;
-}
-.ml-form-field-select .select-hidden:focus {
-	border: solid 1px red;
-}
-.ml-form-field-select .select {
-	cursor: pointer;
-	display: inline-block;
-	position: relative;
-	font-size: 13px;
-	border: 1px solid #757575;
-	color: #333333;
-	width: 100%;
-	height: 40px;
-}
-.ml-form-field-select .select-styled {
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	line-height: 20px;
-	font-size: 13px;
-	background-color: #fff;
-	padding: 10px;
-}
-.ml-form-field-select .select-styled:after {
-	content: "";
-	width: 0;
-	height: 0;
-	border: 7px solid transparent;
-	border-color: #AAA9AA transparent transparent transparent;
-	position: absolute;
-	top: 16px;
-	right: 10px;
-}
-.ml-form-field-select .select-styled:focus {
-	border: solid 1px #007abc;
-	outline: 0;
-}
-.ml-form-field-select .select-styled:focus:after {
-	border-color: #007abc transparent transparent transparent;
-}
-.ml-form-field-select .select-options {
-	display: none;
-	position: absolute;
-	top: 100%;
-	right: 0;
-	font-size: 13px;
-	left: 0;
-	z-index: 999;
-	margin: 0;
-	padding: 0;
-	border: solid 1px #007abc;
-	border-top: 0px;
-	list-style: none;
-	background-color: #ffffff;
-}
-.ml-form-field-select .select-options li {
-	margin: 0;
-	padding: 12px 0;
-	font-size: 13px;
-	text-indent: 15px;
-	border-top: 1px solid #e6e6e6;
-}
-.ml-form-field-select .select-options li:hover {
-	color: #ffffff;
-	background: #007abc;
-}
-.ml-form-field-select .select-options li[rel="hide"] {
-	display: none;
-}
-.ml-form-field-select .select-options li:first-child {
-	border-top: 0;
 }
 /*  ****** Radio buttons  ****** */
 .ml-form-field-radio-group {

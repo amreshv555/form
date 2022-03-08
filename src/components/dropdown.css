@@ -135,7 +135,7 @@
         	border-color: #007abc transparent transparent transparent;
         }
         .ml-form-field-select .select-options {
-        	display: none;
+        
         	position: absolute;
         	top: 100%;
         	right: 0;
